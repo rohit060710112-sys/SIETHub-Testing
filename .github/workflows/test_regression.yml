@@ -41,7 +41,7 @@ jobs:
         run: playwright install --with-deps chromium
 
       - name: Run regression tests
-        run: pytest test_regression.py --html=report.html --self-contained-html
+        run: pytest tests/test_regression.py --html=report.html --self-contained-html
 
       - name: Upload HTML report
         if: always()
