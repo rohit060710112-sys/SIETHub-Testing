@@ -5,7 +5,7 @@ from playwright.sync_api import Page, expect
 BASE_URL = "https://dear-halo-molecules-burlington.trycloudflare.com"
 
 USERS = {
-    "student": {"id": "714023201099", "pass": "Siet@2727", "landing": "/dashboard"},
+    "student": {"id": "714023104109", "pass": "Siet@2727", "landing": "/dashboard"},
     "admin": {"id": "admin@siet.ac.in", "pass": "Siet@2727", "landing": "/dashboard"},
     "officer": {"id": "officer@siet.ac.in", "pass": "password123", "landing": "/placement-officer"},
     "head": {"id": "head@siet.ac.in", "pass": "password123", "landing": "/placement-officer"},
