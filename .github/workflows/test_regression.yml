@@ -28,7 +28,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: playwright install --with-deps chromium
-      - run: pytest tests/siethub-regression-test.py -m regression --html=report.html --self-contained-html
+      - run: pytest tests/test_regression.py -m regression --html=report.html --self-contained-html
       - uses: actions/upload-artifact@v4
         if: always()
         with:
