@@ -37,7 +37,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Playwright Chromium
+      - name: Install Playwright
         run: playwright install --with-deps chromium
 
       - name: Run regression tests
@@ -52,6 +52,7 @@ jobs:
 
   deploy:
     needs: test
+    if: ${{ success() }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deploy done"
